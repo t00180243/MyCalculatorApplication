@@ -25,29 +25,7 @@ android {
         }
     }
 }
-sourceSets {
-    testLocal {
-        java.srcDir file('src/test/java')
-        resources.srcDir file('src/test/res')
-    }
-}
-task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest']) {
-    reports {
-        xml.enabled true
-        xml.destination file("${buildDir}/reports/jacoco/test/jacocoTestReport.xml")
-        html.destination file("${buildDir}/reports/coverage")
-    }
 
-    executionData = files "${buildDir}/jacoco/testDebugUnitTest.exec"
-    sourceDirectories = files android.sourceSets.main.java.srcDirs
-    classDirectories = fileTree(dir: "${buildDir}/intermediates/classes/debug",
-            exclude: ['**/R.class', '**/R$*.class'])
-
-    doLast {
-        println "coveralls report has been generated to file://${buildDir}/reports/jacoco/test/jacocoTestReport.xml"
-        println "coverage report generated at file://${reports.html.destination}/index.html"
-    }
-}
 
 
 
