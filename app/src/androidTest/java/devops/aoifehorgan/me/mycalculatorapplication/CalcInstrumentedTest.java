@@ -35,7 +35,7 @@ public class CalcInstrumentedTest {
         onView(withId(R.id.buttonEql)).perform(click());
         onView(withId(R.id.textViewAns)).check(matches(withText("4")));
     }
-
+/**Test Subtraction**/
     @Test
     public void testSubtraction() {
         onView(withId(R.id.button6)).perform(click());
