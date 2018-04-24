@@ -25,7 +25,7 @@ public class CalcInstrumentedTest {
     @Rule
     public ActivityTestRule<CalcActivity> mActivityRule =
             new ActivityTestRule<>(CalcActivity.class);
-
+/**Test Addition**/
     @Test
     public void testAddition() {
         onView(withId(R.id.button2)).perform(click());
@@ -35,6 +35,7 @@ public class CalcInstrumentedTest {
         onView(withId(R.id.buttonEql)).perform(click());
         onView(withId(R.id.textViewAns)).check(matches(withText("4")));
     }
+
     @Test
     public void testSubtraction() {
         onView(withId(R.id.button6)).perform(click());
