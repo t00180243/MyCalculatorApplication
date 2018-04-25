@@ -23,7 +23,7 @@ public class CalcUnitTest {
     @Test
     public void checkAddition() throws Exception {
         double actual = activity.applyOperation(add,2,2);
-        double expected = 5;
+        double expected = 4;
         assertEquals("Failed",expected,actual,0.001);
     }
     @Test
