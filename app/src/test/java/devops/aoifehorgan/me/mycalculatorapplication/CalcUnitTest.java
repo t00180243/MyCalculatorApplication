@@ -19,6 +19,7 @@ public class CalcUnitTest {
        checkMultiplication();
        checkDivision();
     }
+    /**Check Addition Unit Test*/
     @Test
     public void checkAddition() throws Exception {
         double actual = activity.applyOperation(add,2,2);
