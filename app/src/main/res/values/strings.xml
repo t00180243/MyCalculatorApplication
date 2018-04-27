@@ -15,7 +15,7 @@
     <string name="nine"><b>9</b></string>
     <!-- string name="clear">C</string -->
     <!-- string name="delete_left">\u232B</string -->
-    <string name="delete"><b>Clear</b></string>
+    <string name="delete"><b>Delete</b></string>
     <string name="divide"><b>\u00F7</b></string>
     <string name="multiply"><b>\u2715</b></string>
     <string name="plus"><b>\u002B</b></string>
