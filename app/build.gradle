@@ -31,13 +31,11 @@ android {
         }
     }
     testOptions.unitTests.includeAndroidResources true
+    lintOptions {
+        abortOnError false
+        lintConfig file("../lint.xml")
+    }
 }
-
-
-
-
-
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
